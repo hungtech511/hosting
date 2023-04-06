@@ -1,9 +1,13 @@
-import { ThemeProvider, useTheme } from "@mui/material"
-import theme from "../Assets/theme"
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material"
+import { themeSettings } from "../Assets/theme"
 
-export default function Provider({children}){
+export default function Provider({ children }) {
+  const theme = createTheme(themeSettings)
 
-    return <ThemeProvider theme={theme}>
-        {children}
+  return (
+    <ThemeProvider theme={theme}>
+      {children}
+      <CssBaseline />
     </ThemeProvider>
+  )
 }

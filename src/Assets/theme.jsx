@@ -1,33 +1,57 @@
-import { createTheme } from "@mui/material";
+import { createContext } from "react"
 
-const font = "Jost, sans-serif";
+// color design tokens export
+export const tokens = () => ({
+  primary: "rgb(8, 2, 48)",
+  fontSize: {
+    10: "10px",
+    20: "20px",
+    30: "30px",
+    40: "40px",
+    50: "50px",
+  },
+  red: "red",
+  yellow: "yellow",
+  green: "green",
+})
 
-let theme = createTheme({
-    palette: {
-      primary: { main: '#1d2031' },
-      secondary: { main: '#dc0250' },
-      error: { main: '#6E353A' },
-      warning: { main: '#F5EE9E' },
-      info: { main: '#568BFF' },
-      success: { main: '#00B389' },
-      background: { default: '#FDFFFC' }
+// mui theme settings
+export const themeSettings = {
+  typography: {
+    fontFamily: ["Jost", "sans-serif"].join(","),
+    fontSize: 12,
+    h1: {
+      fontFamily: ["Jost", "sans-serif"].join(","),
+      fontSize: 40,
+      fontWeight: "600",
     },
-    breakpoints: {
-      values: { xs: 600, sm: 800, md: 1000, lg: 1200, xl: 1536, }
+    h2: {
+      fontFamily: ["Jost", "sans-serif"].join(","),
+      fontSize: 32,
+      fontWeight: "600",
     },
-    typography: {
-      fontFamily: font,
-      h1: { fontSize: 69 },
-      h2: { fontSize: 57 },
-      h3: { fontSize: 48 },
-      h4: { fontSize: 40 },
-      h5: { fontSize: 33 },
-      h6: { fontSize: 28 },
-      subtitle1: { fontSize: 23 },
-      subtitle2: { fontSize: 19 },
-      body1: { fontSize: 19 },
-      body2: { fontSize: 16 }
-    }
-  });
+    h3: {
+      fontFamily: ["Jost", "sans-serif"].join(","),
+      fontSize: 24,
+      fontWeight: "600",
+    },
+    h4: {
+      fontFamily: ["Jost", "sans-serif"].join(","),
+      fontSize: 20,
+      fontWeight: "600",
+    },
+    h5: {
+      fontFamily: ["Jost", "sans-serif"].join(","),
+      fontSize: 16,
+      fontWeight: "600",
+    },
+    h6: {
+      fontFamily: ["Jost", "sans-serif"].join(","),
+      fontSize: 14,
+      fontWeight: "600",
+    },
+  },
+}
 
-  export default theme;
+// context for color mode
+export const ColorModeContext = createContext({})
