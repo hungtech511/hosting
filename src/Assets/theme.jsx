@@ -1,22 +1,36 @@
 import { createContext } from "react"
 
 // color design tokens export
-export const tokens = () => ({
+export const ColorTheme = () => ({
   primary: "rgb(8, 2, 48)",
+  red: "red",
+  yellow: "yellow",
+  green: "green",
+  topHeaderBackground: "17,0,122",
+  backgroundHome:"rgb(24,2,157)"
+})
+export const FontSizeTheme = () => ({
   fontSize: {
     10: "10px",
     20: "20px",
     30: "30px",
     40: "40px",
     50: "50px",
-  },
-  red: "red",
-  yellow: "yellow",
-  green: "green",
+  }
 })
+
+
 
 // mui theme settings
 export const themeSettings = {
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 420,
+      md: 600,
+      lg: 1320,
+    },
+  },
   typography: {
     fontFamily: ["Jost", "sans-serif"].join(","),
     fontSize: 12,
