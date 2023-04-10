@@ -1,6 +1,8 @@
 import { Box, Container, Typography } from "@mui/material";
 import { ColorTheme, FontSizeTheme } from "@assets/theme";
-import CustomButton from "@components/Button/Button";
+import Title from "@components/Title";
+import CustomListItem from "@components/ListItems";
+import CustomButton from "@components/Button";
 import Grid from '@mui/material/Grid';
 
 import "./Home.scss";
@@ -57,8 +59,6 @@ const Home = () => {
 				</Box>
 			</Box>
 			<Container>
-				<Typography variant="h1">Home nè</Typography>
-				<CustomButton />
 				<Title highlight="Service" subTitle="Service" center>
 					Hostix Provide Best Service For Your Business
 				</Title>
