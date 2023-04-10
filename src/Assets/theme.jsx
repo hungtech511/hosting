@@ -3,6 +3,7 @@ import { createContext } from "react"
 // color design tokens export
 export const ColorTheme = () => ({
   primary: "rgb(8, 2, 48)",
+  white: "white",
   red: "red",
   yellow: "yellow",
   green: "green",
@@ -36,7 +37,7 @@ export const themeSettings = {
     fontSize: 12,
     h1: {
       fontFamily: ["Jost", "sans-serif"].join(","),
-      fontSize: 40,
+      fontSize: 60,
       fontWeight: "600",
     },
     h2: {
