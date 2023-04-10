@@ -8,7 +8,7 @@ const CustomButton = (color, hover) =>{
                 <span className="text-one">Get Started</span>
                 <span className="text-two">Get Started</span>
             </span>
-            <i class="far fa-long-arrow-right"></i>
+            <i className="far fa-long-arrow-right"></i>
         </button>
     )
 }

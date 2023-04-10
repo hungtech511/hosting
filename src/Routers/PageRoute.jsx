@@ -1,9 +1,9 @@
-import Header from "@layouts/Header"
+import Header from "@layouts/Header/Header"
 import { Box } from "@mui/material"
 import { Suspense, lazy } from "react"
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
 
-const Home = lazy(() => import("@pages/Home"))
+const Home = lazy(() => import("@pages/Home/Home"))
 const AboutUs = lazy(() => import("@pages/AboutUs"))
 const Domain = lazy(() => import("@pages/Domain"))
 const Hosting = lazy(() => import("@pages/Hosting"))

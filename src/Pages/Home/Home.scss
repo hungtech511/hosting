@@ -1,0 +1,67 @@
+.home-background {
+  position: relative;
+  overflow: hidden;
+  padding: 150px 0px 240px;
+  background: var(--home-background);
+  .inner-column {
+    position: relative;
+    padding-top: 40px;
+  }
+  .banner-text {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  .circle-layer {
+    position: absolute;
+    left: 5%;
+    bottom: 35%;
+    width: 5px;
+    height: 5px;
+    z-index: 1;
+    border-radius: 50px;
+    background-color: #fd654f;
+  }
+  .image-column {
+    position: relative;
+    .image-wrapper {
+      position: relative;
+      transition: all 0.25s linear;
+      .image-pattern-layer {
+        position: absolute;
+        left: 10px;
+        top: 250px;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        &.layer-2 {
+          left: 76%;
+          top: -2px;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      .image-animation {
+        background-repeat: no-repeat;
+        animation-name: float_up_down;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}
+
+@keyframes float_up_down {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
