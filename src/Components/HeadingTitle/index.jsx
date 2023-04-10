@@ -4,7 +4,12 @@ import "./Title.scss"
 import { Box, Typography } from "@mui/material"
 import { FontSizeTheme } from "@assets/theme"
 
-const Title = ({ subTitle = "", children = "", highlight = "", center }) => {
+const HeadingTitle = ({
+  subTitle = "",
+  children = "",
+  highlight = "",
+  center,
+}) => {
   const { fontSize } = FontSizeTheme()
   return (
     <Box sx={{ textAlign: center ? "center" : "left" }}>
@@ -21,4 +26,4 @@ const Title = ({ subTitle = "", children = "", highlight = "", center }) => {
   )
 }
 
-export default Title
+export default HeadingTitle

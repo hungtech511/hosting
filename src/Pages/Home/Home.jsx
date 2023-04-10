@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import { ColorTheme, FontSizeTheme } from "@assets/theme";
-import Title from "@components/Title";
+import HeadingTitle from "@components/HeadingTitle";
 import CustomListItem from "@components/ListItems";
 import CustomButton from "@components/Button";
 import Grid from '@mui/material/Grid';
@@ -59,12 +59,12 @@ const Home = () => {
 				</Box>
 			</Box>
 			<Container>
-				<Title highlight="Service" subTitle="Service" center>
+				<HeadingTitle highlight="Service" subTitle="Service" center>
 					Hostix Provide Best Service For Your Business
-				</Title>
-				<Title highlight="Service" subTitle="Service">
+				</HeadingTitle>
+				{/* <HeadingTitle highlight="Service" subTitle="Service">
 					Hostix Provide Best Service For Your Business
-				</Title>
+				</HeadingTitle> */}
 				<CustomListItem />
 			</Container>
 		</>

@@ -14,8 +14,8 @@ function App() {
 		});
 
 		function parallaxed(e) {
-			let amountMovedX = (e.clientX * -0.3 / 8);
-			let amountMovedY = (e.clientY * -0.3 / 8);
+			let amountMovedX = (e.clientX * -0.3 / 10);
+			let amountMovedY = (e.clientY * -0.3 / 10);
 			let x = document.getElementsByClassName("parallaxed");
 			let i;
 			for (i = 0; i < x.length; i++) {
