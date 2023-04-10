@@ -13,11 +13,11 @@ const Home = () => {
 			<Box className="home-background">
 				<Box className="banner-section">
 					<Box className="circle-layer"></Box>
-					<Box 
-					className="icon-layer-one"
-					sx={{
-						backgroundImage: `url(https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-1.png)`
-					}}
+					<Box
+						className="icon-layer-one"
+						sx={{
+							backgroundImage: `url(https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-1.png)`
+						}}
 					></Box>
 					<Container fixed={true} maxWidth="lg">
 						<Grid container spacing={2}>
@@ -56,6 +56,17 @@ const Home = () => {
 					</Container>
 				</Box>
 			</Box>
+			<Container>
+				<Typography variant="h1">Home nè</Typography>
+				<CustomButton />
+				<Title highlight="Service" subTitle="Service" center>
+					Hostix Provide Best Service For Your Business
+				</Title>
+				<Title highlight="Service" subTitle="Service">
+					Hostix Provide Best Service For Your Business
+				</Title>
+				<CustomListItem />
+			</Container>
 		</>
 	);
 };
