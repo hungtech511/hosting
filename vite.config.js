@@ -12,6 +12,7 @@ export default defineConfig({
       { find: "@routers", replacement: "/src/Routers" },
       { find: "@layouts", replacement: "/src/Layouts" },
       { find: "@utils", replacement: "/src/utils" },
+      { find: "@custom", replacement: "/src/Custom" },
     ],
   },
 })
