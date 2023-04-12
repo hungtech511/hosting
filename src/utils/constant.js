@@ -62,7 +62,7 @@ export const listBackgroundHomeImage = [
   },
   {
     id: 4,
-    className: "icon-layer-fourth",
+    className: "icon-layer-four",
     imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-8-1.png'
   },
   {
@@ -74,5 +74,18 @@ export const listBackgroundHomeImage = [
     id: 6,
     className: "shape-layer",
     imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/pattern-layer.png'
+  }
+]
+
+export const listBackgroundAnimation = [
+  {
+    id: 1,
+    className: "image-pattern-layer image-animation",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/part_1.png'
+  },
+  {
+    id: 2,
+    className: "image-pattern-layer image-animation layer-2",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/part_2.png'
   }
 ]
