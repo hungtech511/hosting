@@ -1,17 +1,12 @@
-
 import { Box, Container, Typography } from "@mui/material";
 import Grid from '@mui/material/Grid';
 import { ColorTheme, FontSizeTheme } from "@assets/theme";
-
 import CustomButton from "@components/Button";
 import HoverImage from "@custom/HoverImage/HoverImage";
 import ItemBackground from "@components/ItemBackground";
-
-
 import { listBackgroundHomeImage } from "@utils/constant";
 import HomeServices from "@layouts/HomeServices";
 import "./Home.scss";
-
 
 
 const renderBackground = () => {
@@ -29,10 +24,8 @@ const renderBackground = () => {
 }
 
 const Home = () => {
-	const fonts = FontSizeTheme();
-	const colors = ColorTheme();
-
-
+  const fonts = FontSizeTheme()
+  const colors = ColorTheme()
 	return (
 		<>
 			<HoverImage>
