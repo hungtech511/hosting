@@ -1,0 +1,39 @@
+.comment-post{
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .comment-post_img{
+        width: 3.5em;
+    }
+    .comment-post_text{
+        margin-top: 2em;
+        p{
+            font-size: 1.5em;
+            font-style: italic;
+        }
+    }
+    .comment-post_author{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin-top: 2em;
+        .comment-post_author-avatar{
+            padding: 0.37em 0.4em 0em;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .comment-post_author-info{
+            h3{
+                font-size: 1.5em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+        }
+    }
+}
