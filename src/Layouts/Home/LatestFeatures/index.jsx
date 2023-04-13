@@ -16,7 +16,7 @@ const LatestFeatures = ({ background }) => {
             sx={{ backgroundColor: colors[background] }}
             className="latest-features-section">
             <HeadingTitle colorHeading="white" subTitle="FEATURES" colorSubTitle="blueSubtitle" center>
-                Latest Features of Our Domain
+                Latest Features of Our Domain <br />
                 Hosting Services
             </HeadingTitle>
             <Container fixed={true} maxWidth="lg">
