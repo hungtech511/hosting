@@ -117,3 +117,25 @@ export const listLatestFeatures = [
     imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_2.png'
   }
 ]
+
+export const listControlPanel = [
+  {
+    id: 1,
+    title: "Security & Faster Server",
+    desc:"From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/cloud-server.png'
+  },
+  {
+    id: 2,
+    title: "Backups & Snapshots",
+    desc:"From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/database-1.png'
+  },
+  {
+    id: 3,
+    title: "Global Availability",
+    desc:"From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/data-management.png'
+  }
+]
+
