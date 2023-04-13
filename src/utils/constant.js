@@ -43,36 +43,72 @@ export const listCard = [
   },
 ]
 
-
 export const listBackgroundHomeImage = [
   {
     id: 1,
     className: "icon-layer-one",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-1.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-1.png",
   },
   {
     id: 2,
     className: "icon-layer-two",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-2.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-2.png",
   },
   {
     id: 3,
     className: "icon-layer-three",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-7-1.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-7-1.png",
   },
   {
     id: 4,
     className: "icon-layer-fourth",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-8-1.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-8-1.png",
   },
   {
     id: 5,
     className: "icon-layer-fifth",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-9.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-9.png",
   },
   {
     id: 6,
     className: "shape-layer",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/pattern-layer.png'
-  }
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/pattern-layer.png",
+  },
+]
+
+export const accordionLists = [
+  {
+    id: 1,
+    title: "What should my digital marketing budget be?",
+    description:
+      "On the other hand we denounce with righteous indignat and dislike men who are so beguiled and demoralized by the charms of the moment so by desire.",
+    expandeds: "panel1",
+  },
+  {
+    id: 2,
+    title: "What should my digital marketing budget be?",
+    description:
+      "On the other hand we denounce with righteous indignat and dislike men who are so beguiled and demoralized by the charms of the moment so by desire.",
+    expandeds: "panel2",
+  },
+  {
+    id: 3,
+    title: "What is the design process for branding?",
+    description:
+      "On the other hand we denounce with righteous indignat and dislike men who are so beguiled and demoralized by the charms of the moment so by desire.",
+    expandeds: "panel3",
+  },
+  {
+    id: 4,
+    title: "What is the design process for branding?",
+    description:
+      "On the other hand we denounce with righteous indignat and dislike men who are so beguiled and demoralized by the charms of the moment so by desire.",
+    expandeds: "panel4",
+  },
 ]
