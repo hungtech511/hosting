@@ -1,14 +1,16 @@
 import { ColorTheme, FontSizeTheme } from "@assets/theme";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import CustomButton from "@components/Button";
+
 import HeadingTitle from "@components/HeadingTitle";
 import ItemBackground from "@components/ItemBackground";
+import { listLatestFeatures } from "@utils/constant";
 
 import './LatestFeatures.scss';
 
-const LatestFeatures = ({background}) => {
+const LatestFeatures = ({ background }) => {
+
     const colors = ColorTheme();
-    const fonts = FontSizeTheme();
+    const { fontSize } = FontSizeTheme();
     return (
         <Box
             sx={{ backgroundColor: colors[background] }}
@@ -18,10 +20,26 @@ const LatestFeatures = ({background}) => {
                 Hosting Services
             </HeadingTitle>
             <Container fixed={true} maxWidth="lg">
-                <Grid container spacing={2}>
-                    <Grid className="content-column" item xs={3}>
-                        hi
-                    </Grid>
+                <Grid container spacing={3}>
+                    {
+                        listLatestFeatures?.map((item, index) => {
+                            return (
+                                <Grid key={item?.id} item xs={3}>
+                                    <Box align="center" className="features-item">
+                                        <ItemBackground className="icon-box" imageSrc="https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/vector-10.png">
+                                            <span className="icon">
+                                                <img src={item?.imageSrc} alt="icon" />
+                                            </span>
+                                        </ItemBackground>
+                                        <Typography fontSize={fontSize[24]} variant="h4">{item?.title}</Typography>
+                                        <Typography color={colors.text} fontSize={fontSize[18]} paragraph>
+                                            {item?.desc}
+                                        </Typography>
+                                    </Box>
+                                </Grid>
+                            )
+                        })
+                    }
                 </Grid>
             </Container>
         </Box>

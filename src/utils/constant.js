@@ -89,3 +89,31 @@ export const listBackgroundAnimation = [
     imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/part_2.png'
   }
 ]
+
+
+export const listLatestFeatures = [
+  {
+    id: 1,
+    title: "Safe and Secured",
+    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_3.png'
+  },
+  {
+    id: 2,
+    title: "100% Uptime",
+    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_1.png'
+  },
+  {
+    id: 3,
+    title: "Control Cpanel",
+    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_4.png'
+  },
+  {
+    id: 4,
+    title: "Dedicated Support",
+    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_2.png'
+  }
+]

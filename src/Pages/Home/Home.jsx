@@ -5,6 +5,7 @@ import SecurityFirst from "@layouts/Home/SecurityFirst";
 import LatestFeatures from "@layouts/Home/LatestFeatures";
 
 import "./Home.scss";
+import ControlPanel from "@layouts/Home/ControlPanel";
 
 const Home = () => {
 	return (
@@ -14,6 +15,7 @@ const Home = () => {
 			<CallUsNow background="backgroundHome"/>
 			<SecurityFirst/>
 			<LatestFeatures background="backgroundHome"/>
+			<ControlPanel/>
 		</>
 	);
 };
