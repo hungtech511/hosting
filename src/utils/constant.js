@@ -43,99 +43,142 @@ export const listCard = [
   },
 ]
 
-
 export const listBackgroundHomeImage = [
   {
     id: 1,
     className: "icon-layer-one",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-1.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-1.png",
   },
   {
     id: 2,
     className: "icon-layer-two",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-2.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-2.png",
   },
   {
     id: 3,
     className: "icon-layer-three",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-7-1.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-7-1.png",
   },
   {
     id: 4,
     className: "icon-layer-four",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-8-1.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-8-1.png",
   },
   {
     id: 5,
     className: "icon-layer-fifth",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-9.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-9.png",
   },
   {
     id: 6,
     className: "shape-layer",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/pattern-layer.png'
-  }
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/pattern-layer.png",
+  },
 ]
 
 export const listBackgroundAnimation = [
   {
     id: 1,
     className: "image-pattern-layer image-animation",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/part_1.png'
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/part_1.png",
   },
   {
     id: 2,
     className: "image-pattern-layer image-animation layer-2",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/part_2.png'
-  }
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/part_2.png",
+  },
 ]
-
 
 export const listLatestFeatures = [
   {
     id: 1,
     title: "Safe and Secured",
-    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_3.png'
+    desc: "On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_3.png",
   },
   {
     id: 2,
     title: "100% Uptime",
-    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_1.png'
+    desc: "On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_1.png",
   },
   {
     id: 3,
     title: "Control Cpanel",
-    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_4.png'
+    desc: "On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_4.png",
   },
   {
     id: 4,
     title: "Dedicated Support",
-    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_2.png'
-  }
+    desc: "On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_2.png",
+  },
 ]
 
 export const listControlPanel = [
   {
     id: 1,
     title: "Security & Faster Server",
-    desc:"From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/cloud-server.png'
+    desc: "From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/cloud-server.png",
   },
   {
     id: 2,
     title: "Backups & Snapshots",
-    desc:"From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/database-1.png'
+    desc: "From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/database-1.png",
   },
   {
     id: 3,
     title: "Global Availability",
-    desc:"From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
-    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/data-management.png'
-  }
+    desc: "From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/data-management.png",
+  },
 ]
 
+export const accordionLists = [
+  {
+    id: 1,
+    title: "What should my digital marketing budget be?",
+    description:
+      "On the other hand we denounce with righteous indignat and dislike men who are so beguiled and demoralized by the charms of the moment so by desire.",
+    expandeds: "panel1",
+  },
+  {
+    id: 2,
+    title: "What should my digital marketing budget be?",
+    description:
+      "On the other hand we denounce with righteous indignat and dislike men who are so beguiled and demoralized by the charms of the moment so by desire.",
+    expandeds: "panel2",
+  },
+  {
+    id: 3,
+    title: "What is the design process for branding?",
+    description:
+      "On the other hand we denounce with righteous indignat and dislike men who are so beguiled and demoralized by the charms of the moment so by desire.",
+    expandeds: "panel3",
+  },
+  {
+    id: 4,
+    title: "What is the design process for branding?",
+    description:
+      "On the other hand we denounce with righteous indignat and dislike men who are so beguiled and demoralized by the charms of the moment so by desire.",
+    expandeds: "panel4",
+  },
+]
