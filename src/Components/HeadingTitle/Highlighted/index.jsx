@@ -1,29 +1,33 @@
 import { Typography } from "@mui/material"
-import { FontSizeTheme, ColorTheme } from "@assets/theme"
+import React from "react"
 
 const escapeRegExp = (str = "") => str.replace(/([.?*+^$[\]\\(){}|-])/g, "\\$1")
-const Highlighted = ({ search = "", children = "", colorHeading }) => {
-  const patt = new RegExp(`(${escapeRegExp(search)})`, "i")
-  const parts = String(children).split(patt)
-  const { fontSize } = FontSizeTheme()
-  const  colors  = ColorTheme()
+const Highlight = ({ parts, child, patt }) => {
+  return parts(child)?.map((part, index) =>
+    patt.test(part) ? (
+      <span className="highlighted" key={index}>
+        {part}
+      </span>
+    ) : (
+      part
+    ),
+  )
+}
 
-  if (search) {
-    return (
-      <Typography color={colors[colorHeading]} variant="h2" fontSize={fontSize[42]} fontWeight={600}>
-        {parts.map((part, index) =>
-          patt.test(part) ? (
-            <Typography variant="span" className="highlighted" key={index}>
-              {part}
-            </Typography>
-          ) : (
-            part
-          ),
-        )}
-      </Typography>
-    )
-  }
-  return <Typography color={colors[colorHeading]} fontSize={fontSize[42]} fontWeight={600} variant="h2">{children}</Typography>
+const Highlighted = ({ search = "", children = "" }) => {
+  const patt = new RegExp(`(${escapeRegExp(search)})`, "i")
+  const parts = (child) => String(child).split(patt)
+  return (
+    <Typography variant="h2">
+      {React.Children.map(children, (child) => {
+        if (typeof child !== "string") {
+          return <br />
+        }
+        return <Highlight parts={parts} child={child} patt={patt} />
+      })}
+    </Typography>
+  )
+
 }
 
 export default Highlighted
