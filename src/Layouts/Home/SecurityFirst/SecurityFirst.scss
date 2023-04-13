@@ -1,0 +1,21 @@
+.security-section{
+    padding:60px 0px 70px;
+    .inner-column{
+        padding-top:75px;
+    }
+    .image-column{
+        position: relative;
+    }
+    .icon-layer{
+        position: absolute;
+        left: 0px;
+        top: 70px;
+        right: 0px;
+        bottom: 0px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    button{
+        margin-top:40px;
+    }
+}

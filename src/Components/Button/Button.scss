@@ -10,7 +10,6 @@
   font-size: 16px;
   text-transform: capitalize;
   padding: 10px 35px 10px;
-//   background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
   border: none;
   cursor: pointer;
   &::before {
@@ -26,6 +25,23 @@
     border-radius: 50%;
     z-index: 1;
     background: #0f0f2d;
+  }
+  &.orange{
+      background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
+  }
+  &.btn-border{
+    border:1px solid var(--white-color);
+    color:var(--white-color);
+    background:transparent;
+    &::before{
+      background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
+    }
+    &:hover {
+      border:1px solid #fd654e;
+      &::before{
+        background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
+      }
+    }
   }
   .btn-wrap {
     position: relative;

@@ -27,7 +27,7 @@ const Highlighted = ({ search = "", children = "" }) => {
       })}
     </Typography>
   )
+
 }
 
 export default Highlighted
-//

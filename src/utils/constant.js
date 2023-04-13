@@ -62,7 +62,7 @@ export const listBackgroundHomeImage = [
   },
   {
     id: 4,
-    className: "icon-layer-fourth",
+    className: "icon-layer-four",
     imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-8-1.png'
   },
   {
@@ -76,3 +76,66 @@ export const listBackgroundHomeImage = [
     imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/pattern-layer.png'
   }
 ]
+
+export const listBackgroundAnimation = [
+  {
+    id: 1,
+    className: "image-pattern-layer image-animation",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/part_1.png'
+  },
+  {
+    id: 2,
+    className: "image-pattern-layer image-animation layer-2",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/part_2.png'
+  }
+]
+
+
+export const listLatestFeatures = [
+  {
+    id: 1,
+    title: "Safe and Secured",
+    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_3.png'
+  },
+  {
+    id: 2,
+    title: "100% Uptime",
+    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_1.png'
+  },
+  {
+    id: 3,
+    title: "Control Cpanel",
+    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_4.png'
+  },
+  {
+    id: 4,
+    title: "Dedicated Support",
+    desc:"On the other hand we denounce with right us indignation dislike men who are so beguiled",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/ff_2.png'
+  }
+]
+
+export const listControlPanel = [
+  {
+    id: 1,
+    title: "Security & Faster Server",
+    desc:"From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/cloud-server.png'
+  },
+  {
+    id: 2,
+    title: "Backups & Snapshots",
+    desc:"From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/database-1.png'
+  },
+  {
+    id: 3,
+    title: "Global Availability",
+    desc:"From accidents windshield damage lawsuits From accidents windshield damage lawsuits",
+    imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/data-management.png'
+  }
+]
+
