@@ -76,3 +76,86 @@ export const listBackgroundHomeImage = [
     imageSrc: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/pattern-layer.png'
   }
 ]
+
+export const dataCommentPost = [
+  {
+    id: 1,
+    text: 'Lorem ipsum dolor sit amt consectetur adipiscing elit, sed teiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrice gravida. Risus commodo viverra.',
+    author: 'Alex D. Denz',
+    avatar: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/author-1.jpg',
+    position: 'Founder, Alex Co.'
+  },
+  {
+    id: 2,
+    text: 'Lorem ipsum dolor sit amt consectetur adipiscing elit, sed teiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrice gravida. Risus commodo viverra.',
+    author: 'Alex D. Denz',
+    avatar: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/author-1.jpg',
+    position: 'Founder, Alex Co.'
+  },
+  {
+    id: 3,
+    text: 'Lorem ipsum dolor sit amt consectetur adipiscing elit, sed teiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrice gravida. Risus commodo viverra.',
+    author: 'Alex D. Denz',
+    avatar: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/author-1.jpg',
+    position: 'Founder, Alex Co.'
+  },
+  {
+    id: 4,
+    text: 'Lorem ipsum dolor sit amt consectetur adipiscing elit, sed teiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrice gravida. Risus commodo viverra.',
+    author: 'Alex D. Denz',
+    avatar: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/author-1.jpg',
+    position: 'Founder, Alex Co.'
+  }
+]
+
+export const dataNewsBlockThree = [
+  {
+    id: 1,
+    title: 'How to download & restore a full',
+    date: '10 Apr, 2023',
+    image: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/blog1-417x277.jpg',
+    server: 'Cloud Hosting'
+  },
+  {
+    id: 2,
+    title: '7 Different Types of Web Hosting You',
+    date: '10 Apr, 2023',
+    image: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/blog3.jpg',
+    server: 'Cloud Hosting'
+  },
+  {
+    id: 3,
+    title: 'Finally found a work computer setup That’s',
+    date: '10 Apr, 2023',
+    image: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/blog-1-417x277.jpg',
+    server: 'Cloud Hosting'
+  }
+]
+
+export const dataSponsor = [
+  {
+    id: 1,
+    link: '#',
+    image: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/27.png',
+  },
+  {
+    id: 2,
+    link: '#',
+    image: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/23.png',
+  },
+  {
+    id: 3,
+    link: '#',
+    image: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/24.png',
+  },
+  {
+    id: 4,
+    link: '#',
+    image: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/25.png',
+  },
+  {
+    id: 5,
+    link: '#',
+    image: 'https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/26.png',
+  },
+]
