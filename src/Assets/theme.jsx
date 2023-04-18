@@ -10,7 +10,8 @@ export const ColorTheme = () => ({
   topHeaderBackground: "17,0,122",
   backgroundHome: "rgb(24,2,157)",
   text : "#666",
-  blueSubtitle: "rgb(54,130,254)"
+  blueSubtitle: "rgb(54,130,254)",
+  lightBlue: "#EAF7FF",
 })
 export const FontSizeTheme = () => ({
   fontSize: {
@@ -19,10 +20,25 @@ export const FontSizeTheme = () => ({
     18: "18px",
     20: "20px",
     24: "24px",
+    28: "28px",
     30: "30px",
     40: "40px",
     42: "42px",
     50: "50px",
+  },
+})
+
+export const FontWeightTheme = () => ({
+  fontWeight: {
+    100: "100",
+    200: "200",
+    300: "300",
+    400: "400",
+    500: "500",
+    600: "600",
+    700: "700",
+    800: "800",
+    900: "900",
   },
 })
 

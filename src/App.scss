@@ -27,7 +27,7 @@ img {
 p{
   margin:0;
 }
-.image-column{
+.image-column-home{
   position: relative;
   .icon-layer{
     position: absolute;
@@ -39,9 +39,32 @@ p{
     background-repeat: no-repeat;
   }
 }
+
+.image-column{
+  position: relative;
+  .icon-layer-shape{
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    right: 0px;
+    bottom: 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+.image-center{
+  display: block;
+  margin:0 auto;
+}
+
 @media (min-width: 420px) {
   .MuiContainer-root {
     padding-left: 15px !important;
     padding-right: 15px !important;
+  }
+}
+@media (max-width: 500px) {
+  .icon-layer-shape{
+    display: none;
   }
 }

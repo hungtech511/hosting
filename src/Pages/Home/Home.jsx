@@ -4,20 +4,24 @@ import CallUsNow from "@layouts/Home/CallUsNow"
 import SecurityFirst from "@layouts/Home/SecurityFirst"
 import LatestFeatures from "@layouts/Home/LatestFeatures"
 import ControlPanel from "@layouts/Home/ControlPanel"
+import PricingPlan from "@layouts/Home/PricingPlan"
+import Testimonial from "@layouts/Home/Testimonial"
+import AccordionIner from "@components/Accordion/AccordionIner"
 
 import "./Home.scss"
-import AccordionIner from "@components/Accordion/AccordionIner"
 
 const Home = () => {
   return (
     <>
       <HomeBackground background="backgroundHome" />
       <HomeServices />
+      <PricingPlan background="lightBlue"/>
       <CallUsNow background="backgroundHome" />
       <SecurityFirst />
       <LatestFeatures background="backgroundHome" />
       <ControlPanel />
-      <AccordionIner />
+      <Testimonial background="lightBlue"/>
+      {/* <AccordionIner /> */}
     </>
   )
 }

@@ -17,8 +17,8 @@ const CallUsNow = ({background}) => {
             className="call-us-now">
                 <Box className="banner-section">
                     <Container fixed={true} maxWidth="lg">
-                        <Grid container spacing={2}>
-                            <Grid className="content-column" item xs={6}>
+                        <Grid container spacing={{lg: 2, md:4, xs: 8}}>
+                            <Grid className="content-column" item lg={6}>
                                 <Box className="inner-column">
                                     <Typography fontSize={fonts.fontSize[42]} color={colors.white} variant="h2">
                                         Let the experts build you
@@ -30,7 +30,7 @@ const CallUsNow = ({background}) => {
                                     <CustomButton text="Request A Call back" color="orange"/>
                                 </Box>
                             </Grid>
-                            <Grid className="image-column" item xs={6}>
+                            <Grid className="image-column" item lg={6}>
                                 <Box className="image-wrapper">
                                     <img src="https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/cta.png" alt="image" />
                                 </Box>

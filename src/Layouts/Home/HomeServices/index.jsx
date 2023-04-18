@@ -9,7 +9,7 @@ const HomeServices = () => {
         <div className="home-services">
             <Container>
                 <HeadingTitle highlight="Service" subTitle="Service" center>
-                    Hostix Provide Best Service For Your Business
+                    Hostix Provide Best Service <br /> For Your Business
                 </HeadingTitle>
                 <CustomListItem />
             </Container>

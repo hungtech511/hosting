@@ -128,6 +128,43 @@ export const listLatestFeatures = [
   },
 ]
 
+export const pricingPlanList = [
+  {
+    id: 1,
+    title: "Cloud Hosting",
+    desc: "Ideal for web designers & developers <br /> manage multiple projects.",
+    discountPercent: "30",
+    sale: "49.99",
+    price: "169.99",
+    renew: "69.99",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/price-28.png",
+  },
+  {
+    id: 2,
+    title: "VPS Hosting",
+    desc: "Ideal for web designers & developers <br /> manage multiple projects.",
+    discountPercent: "30",
+    sale: "89.99",
+    price: "169.99",
+    renew: "69.99",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/price-29.png",
+  },
+  {
+    id: 3,
+    title: "Shared Hosting",
+    desc: "Ideal for web designers & developers <br /> manage multiple projects.",
+    discountPercent: "30",
+    sale: "99.99",
+    price: "169.99",
+    renew: "69.99",
+    imageSrc:
+      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/price-28.png",
+  }
+]
+
+
 export const listControlPanel = [
   {
     id: 1,

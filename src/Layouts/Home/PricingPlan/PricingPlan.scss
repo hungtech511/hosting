@@ -1,0 +1,68 @@
+.pricing-plan-section {
+  padding: 180px 0px 120px 0px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  .plan-box {
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box {
+      position: relative;
+      text-align: center;
+      padding: 0px 35px 40px;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0px;
+        top: 50px;
+        right: 0px;
+        bottom: 0px;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: var(--box-shadow);
+      }
+      .icon-box {
+        position: relative;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: #fff;
+      }
+      .text {
+        margin-top: 15px;
+      }
+      .price {
+        sup {
+          font-weight: 500;
+          font-size: 22px;
+        }
+        sub {
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      .discount {
+        span {
+          text-decoration: line-through;
+          color: #666;
+        }
+      }
+      .renew {
+        margin-top: 30px;
+        font-size: 18px;
+        color: #666;
+      }
+      & > div,
+      & > h3 {
+        position: relative;
+        z-index: 2;
+      }
+    }
+    &:hover{
+      .icon-box{
+        animation:icon-bounce 0.8s ease-out;
+      }
+    }
+  }
+}

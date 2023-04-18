@@ -52,8 +52,8 @@ const HomeBackground = ({background}) => {
                         renderBackground()
                     }
                 <Container fixed={true} maxWidth="lg">
-                    <Grid container spacing={2}>
-                        <Grid className="content-column" item xs={6}>
+                    <Grid container spacing={5}>
+                        <Grid className="content-column" item lg={6}>
                             <Box className="inner-column">
                                 <Typography color={colors.white} variant="h1">
                                     Reliable & Ultrafast
@@ -71,7 +71,7 @@ const HomeBackground = ({background}) => {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Grid className="image-column" item xs={6}>
+                        <Grid className="image-column-home" item lg={6}>
                             <Box className="image-wrapper">
                                 {
                                     renderBackgroundAnimation()
