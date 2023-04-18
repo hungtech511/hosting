@@ -11,15 +11,15 @@ const SecurityFirst = () => {
     const fonts = FontSizeTheme();
     return (
         <Box className="security-section">
-            <Container fixed={true} maxWidth="lg">
-                <Grid container spacing={2}>
-                    <Grid className="image-column" item xs={7}>
-                        <ItemBackground className="icon-layer" imageSrc="https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/pattern-16.png" />
+            <Container>
+                <Grid container spacing={0}>
+                    <Grid className="image-column" item lg={7} order={{ lg: 1, xs: 2 }}>
+                        <ItemBackground className="icon-layer-shape" imageSrc="https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/pattern-16.png" />
                         <Box className="image-wrapper">
-                            <img src="https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/security-2.png" alt="image" />
+                            <img className="image-center" src="https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/security-2.png" alt="image" />
                         </Box>
                     </Grid>
-                    <Grid className="content-column" item xs={5}>
+                    <Grid className="content-column" item lg={5} order={{ lg: 2, xs: 1 }}>
                         <Box className="inner-column">
                             <HeadingTitle subTitle="SECURITY" colorSubTitle="blueSubtitle">
                                 Put your site’s safety

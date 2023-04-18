@@ -24,7 +24,7 @@ const LatestFeatures = ({ background }) => {
                     {
                         listLatestFeatures?.map((item, index) => {
                             return (
-                                <Grid key={item?.id} item xs={3}>
+                                <Grid key={item?.id} item lg={3} md={6}>
                                     <Box align="center" className="features-item">
                                         <ItemBackground className="icon-box" imageSrc="https://themexriver.com/wp/hostix/wp-content/uploads/2023/01/vector-10.png">
                                             <span className="icon">

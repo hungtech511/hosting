@@ -15,7 +15,7 @@ const Header = () => {
   const isFixed = () => {
     /* Method that will fix header after a specific scrollable */
     const scrollTop = window.scrollY
-    const fixClass = !!Boolean(scrollTop >= 50)
+    const fixClass = !!Boolean(scrollTop >= 100)
     setFixed(fixClass)
 
   }
@@ -53,14 +53,13 @@ const Header = () => {
         </Container>
       </Box>
 
-      <AppBar
+      <Box
         sx={{
           background: "transparent",
           boxShadow: "none"
         }}
-        position={`${fixed ? "fixed" : "relative"}`}>
-        <Box
-          fontSize={fonts.fontSize[20]}
+        // className={`${fixed ? "navbar fixed-nav" : "navbar"}`}
+        fontSize={fonts.fontSize[20]}
         >
           <Container fixed={true} maxWidth="lg">
             <Box className="nav" sx={{
@@ -94,8 +93,7 @@ const Header = () => {
               </Box>
             </Box>
           </Container>
-        </Box>
-      </AppBar>
+      </Box>
     </header>
   )
 }

@@ -26,18 +26,43 @@
     z-index: 1;
     background: #0f0f2d;
   }
-  &.orange{
-      background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
-  }
-  &.btn-border{
-    border:1px solid var(--white-color);
-    color:var(--white-color);
-    background:transparent;
-    &::before{
+  &.btn-border {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    background: transparent;
+    &::before {
       background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
     }
     &:hover {
-      border:1px solid #fd654e;
+      border: 1px solid #fd654e;
+      &::before {
+        background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
+      }
+    }
+  }
+  &.btn-long{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn-wrap{
+      float:none;
+    }
+  }
+  // color
+  &.orange {
+    background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
+  }
+  &.blue {
+    background: linear-gradient(
+      94.53deg,
+      #1434a8 1.27%,
+      #2a58fe 102.78%
+    );
+    &::before{
+      background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
+    }
+    &:hover{
       &::before{
         background: linear-gradient(94.53deg, #fd654e 1.27%, #f28b28 102.78%);
       }
@@ -67,32 +92,32 @@
       transition: all 0.3s ease;
     }
   }
-  i{
+  i {
     position: relative;
     z-index: 1;
     top: 1px;
     line-height: 34px;
     text-align: center;
     display: inline-block;
-    color:#fff;
+    color: #fff;
     transition: all 0.3s ease;
-    margin-left:10px;
+    margin-left: 10px;
     transform: rotate(-45deg);
   }
   // Hover button
-  &:hover{
-    &::before{
-        top: -40%;
+  &:hover {
+    &::before {
+      top: -40%;
     }
-    .text-one{
-        transform: translateY(-150%);
+    .text-one {
+      transform: translateY(-150%);
     }
-    .text-two{
-        top: 50%;
-        transform: translateY(-50%);
+    .text-two {
+      top: 50%;
+      transform: translateY(-50%);
     }
-    i{
-        transform: rotate(0deg);
+    i {
+      transform: rotate(0deg);
     }
   }
 }
