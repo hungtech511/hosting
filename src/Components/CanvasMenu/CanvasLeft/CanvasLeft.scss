@@ -1,0 +1,119 @@
+.offcanvas__left {
+  border-right: 1px solid #efefef;
+  padding: 85px 0 85px 100px;
+  overflow: hidden;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+  }
+  .menu-list {
+    li {
+      position: relative;
+      width: 100%;
+      a {
+        width: 100%;
+        padding: 30px 0;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 1;
+        color: #000;
+        text-transform: capitalize;
+        border-top: 1px solid #efefef;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease;
+        &:not(.expand-list):hover {
+          color: var(--secondary-color);
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1399px){
+          font-size: 48px;
+        }
+        @media only screen and (min-width: 992px) and (max-width: 1199px){
+          font-size: 40px;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          font-size: 36px;
+          padding: 20px 0;
+        }
+        @media only screen and (max-width: 767px) {
+          padding: 19px 0;
+          font-size: 20px;
+        }
+      }
+      .expand-list {
+        border-top: none;
+        width: 85px;
+        height: 121px;
+        justify-content: center;
+        font-weight: 300;
+        border-left: 1px solid #efefef;
+        font-size: 36px;
+        padding: 12px;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        &:hover {
+          color: var(--white-color);
+          background: #000;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1399px){
+          height:110px;
+        }
+        @media only screen and (min-width: 992px) and (max-width: 1199px){
+          height: 101px;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+          width: 65px;
+          height: 77px;
+        }
+        @media only screen and (max-width: 767px) {
+          width: 57px;
+          height: 59px;
+        }
+      }
+      &:last-child {
+        & > a:not(.expand-list) {
+          border-bottom: 1px solid #efefef;
+        }
+      }
+      .sub-menu {
+        li {
+          a {
+            font-size: 24px;
+            text-transform: capitalize;
+            padding: 30px;
+          }
+          &:last-child {
+            & > a:not(.expand-list) {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 1200px) and (max-width: 1399px){
+      padding:80px 0 80px 80px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px){
+    padding:60px 0 60px 60px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    padding: 60px 0 40px 30px;
+  }
+  @media only screen and (max-width: 767px) {
+    padding: 0;
+    border: none;
+  }
+}

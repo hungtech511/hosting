@@ -23,7 +23,7 @@
       color: #080230;
       transition: all 0.3s ease;
       &:hover {
-        color: #fc664d;
+        color: var(--secondary-color);
       }
     }
   }
@@ -40,7 +40,7 @@
     margin-top: 20px;
 
     &:hover {
-      color: #fc664d;
+      color: var(--secondary-color);
       i {
         transform: rotate(0);
       }

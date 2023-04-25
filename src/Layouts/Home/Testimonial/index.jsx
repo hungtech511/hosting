@@ -24,7 +24,7 @@ const Testimonial = ({ background }) => {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 800,
+                breakpoint: 1199,
                 settings: {
                     slidesToShow: 2,
                 }

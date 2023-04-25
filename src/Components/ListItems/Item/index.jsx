@@ -4,7 +4,7 @@ import CustomButton from "@components/Button"
 
 const CardItem = ({ title, image, description }) => {
   return (
-    <Grid xs={12} md={4}>
+    <Grid xs={12} sm={12} md={6} lg={4} >
       <div className="grid__block">
         <div className="grid__block--img">
           <img src={image} alt="" />

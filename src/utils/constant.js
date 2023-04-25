@@ -1,3 +1,54 @@
+export const listMenu = [
+  {
+    id: 1,
+    title: "Home",
+    path: "/"
+  },
+  {
+    id: 2,
+    title: "About Us",
+    path: "/about-us",
+    subMenu: [
+      {
+        id: 1,
+        title: "About us 2",
+        path: "/"
+      },
+      {
+        id: 2,
+        title: "About us 3",
+        path: "/"
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Domain",
+    path: "/domain"
+  },
+  {
+    id: 4,
+    title: "Hosting",
+    path: "/hosting"
+  },
+  {
+    id: 5,
+    title: "Blog",
+    path: "/blog",
+    subMenu: [
+      {
+        id: 1,
+        title: "About us 2",
+        path: "/"
+      },
+      {
+        id: 2,
+        title: "About us 3",
+        path: "/"
+      }
+    ]
+  }
+]
 export const listCard = [
   {
     id: 1,
