@@ -2,7 +2,6 @@ import { ColorTheme, FontSizeTheme, FontWeightTheme } from "@assets/theme";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import CustomButton from "@components/Button";
 import HeadingTitle from "@components/HeadingTitle";
-import ItemBackground from "@components/ItemBackground";
 
 import { pricingPlanList } from "@utils/constant";
 
@@ -14,6 +13,8 @@ const PricingPlan = ({ background }) => {
     const colors = ColorTheme();
     const { fontSize } = FontSizeTheme();
     const { fontWeight } = FontWeightTheme();
+
+
 
     return (
         <Box
@@ -27,11 +28,11 @@ const PricingPlan = ({ background }) => {
                 Choose Your Plan
             </HeadingTitle>
             <Container fixed={true} maxWidth="lg">
-                <Grid container spacing={4}>
+                <Grid container spacing={{lg: 4, xs:3}}>
                     {
                         pricingPlanList?.map((item, index) => {
                             return (
-                                <Grid className="plan-box" key={index} item lg={4} md={6}>
+                                <Grid className="plan-box" key={index} item lg={4} md={6} sm={6} xs={12} >
                                     <Box className="inner-box">
                                         <Box className="icon-box">
                                             <span className="icon">
@@ -40,7 +41,6 @@ const PricingPlan = ({ background }) => {
                                         </Box>
                                         <Typography fontWeight={fontWeight[700]} fontSize={fontSize[28]} variant="h3">{item?.title}</Typography>
                                         <Box fontSize={fontSize[18]} color={colors["text"]} className="text" dangerouslySetInnerHTML={{ __html: `${item?.desc}` }}>
-
                                         </Box>
                                         <Box
                                             color={"#666666"}

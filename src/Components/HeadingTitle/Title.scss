@@ -1,5 +1,16 @@
-.heading-title{
-  margin-bottom:30px;
+.heading-title {
+  margin-bottom: 30px;
+  @media only screen and (max-width: 767px){
+    h2{
+      font-size: 36px;
+    line-height: 46px;
+    }
+  }
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 26px;
+    }
+  }
 }
 
 span.highlighted {
@@ -8,6 +19,6 @@ span.highlighted {
 .text__center {
   text-align: center;
   &--subtitle {
-    color: #fc664d;
+    color: var(--secondary-color);
   }
 }

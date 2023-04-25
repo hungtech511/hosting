@@ -1,0 +1,45 @@
+// Responsive Home Page
+@media (max-width: 767px) {
+    .home-services{
+        padding:50px 0;
+        .grid__block{
+            padding:40px 25px;
+        }
+    }
+    .pricing-plan-section{
+        padding:80px 0;
+    }
+    .call-us-now{
+        .inner-column{
+            padding:0;
+            & > *{
+                text-align: center;
+            }
+            button{
+                display: block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        }
+    }
+    .security-section{
+        .inner-column{
+            padding:0;
+            button{
+                margin-top:30px;
+            }
+        }
+    }
+    .latest-features-section{
+        padding:40px 0;
+        .features-item{
+            padding:45px 10px;
+        }
+    }
+    .control-panel-section{
+        padding:50px 0;
+        .content-column{
+            padding-top:35px;
+        }
+    }
+}

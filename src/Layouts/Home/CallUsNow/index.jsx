@@ -2,6 +2,7 @@ import { ColorTheme, FontSizeTheme } from "@assets/theme";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import "./CallUsNow.scss";
 import CustomButton from "@components/Button";
+import HeadingTitle from "@components/HeadingTitle";
 
 const CallUsNow = ({background}) => {
     const colors = ColorTheme();
@@ -20,10 +21,10 @@ const CallUsNow = ({background}) => {
                         <Grid container spacing={{lg: 2, md:4, xs: 8}}>
                             <Grid className="content-column" item lg={6}>
                                 <Box className="inner-column">
-                                    <Typography fontSize={fonts.fontSize[42]} color={colors.white} variant="h2">
+                                    <HeadingTitle fontSize={fonts.fontSize[42]} colorHeading={colors["white"]} >
                                         Let the experts build you
                                         the site of your dreams.
-                                    </Typography>
+                                    </HeadingTitle>
                                     <Typography color={colors.white} className="call" fontSize={fonts.fontSize[20]} paragraph={true}>
                                         Call us now at <a href="tel:844-303-1728">844-303-1728</a>
                                     </Typography>

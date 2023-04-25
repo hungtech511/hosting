@@ -15,11 +15,11 @@ const LatestFeatures = ({ background }) => {
         <Box
             sx={{ backgroundColor: colors[background] }}
             className="latest-features-section">
-            <HeadingTitle colorHeading="white" subTitle="FEATURES" colorSubTitle="blueSubtitle" center>
-                Latest Features of Our Domain <br />
-                Hosting Services
-            </HeadingTitle>
             <Container fixed={true} maxWidth="lg">
+                <HeadingTitle colorHeading="white" subTitle="FEATURES" colorSubTitle="blueSubtitle" center>
+                    Latest Features of Our Domain <br />
+                    Hosting Services
+                </HeadingTitle>
                 <Grid container spacing={3}>
                     {
                         listLatestFeatures?.map((item, index) => {
