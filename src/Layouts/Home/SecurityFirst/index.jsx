@@ -14,7 +14,7 @@ const SecurityFirst = () => {
             <Container>
                 <Grid container spacing={0}>
                     <Grid className="image-column" item lg={7} order={{ lg: 1, xs: 2 }}>
-                        <ItemBackground className="icon-layer-shape" imageSrc="https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/pattern-16.png" />
+                        <ItemBackground className="icon-layer-shape" imageSrc="public/image/pattern-16.png" />
                         <Box className="image-wrapper">
                             <img className="image-center" src="https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/security-2.png" alt="image" />
                         </Box>

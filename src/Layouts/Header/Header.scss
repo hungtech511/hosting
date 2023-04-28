@@ -73,6 +73,7 @@ header {
       }
       @media only screen and (min-width: 0px) and (max-width: 991px){
         padding:12px 0;
+        background:#0f0f2d;
         .outer-box{
           display: flex;
         }
@@ -220,7 +221,7 @@ header {
       transition: all 500ms ease;
       &:nth-child(5),
       &:nth-child(9) {
-        background-color: #fd654f;
+        background-color: #fd654f !important;
       }
     }
     &:hover {
@@ -245,6 +246,29 @@ header {
       display: block;
       clear: both;
       content: "";
+    }
+  }
+  &.style-2{
+    position: relative;
+    .header-top{
+      background:rgba(17, 0, 122, 0.5);
+    }
+    .auto-container{
+      .inner-container{
+        background-color: transparent;
+      }
+    }
+    .nav-list{
+      a{
+        color:#000;
+      }
+    }
+    .outer-box{
+      .open-canvas{
+        span{
+          background:#000;
+        }
+      }
     }
   }
 }

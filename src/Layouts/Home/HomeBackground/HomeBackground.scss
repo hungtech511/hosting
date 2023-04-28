@@ -5,6 +5,18 @@
     .inner-column {
       position: relative;
       padding-top: 40px;
+      @media only screen and (max-width: 1140px){
+        h1{
+          line-height: 50px;
+          font-size: 40px;
+        }
+      }
+      @media only screen and (max-width: 599px){
+        h1{
+          line-height: 42px;
+          font-size: 32px;
+        }
+      }
     }
     .banner-text {
       margin-top: 25px;

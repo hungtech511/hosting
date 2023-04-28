@@ -1,18 +1,19 @@
+import { Link } from "react-router-dom"
 import "./Button.scss"
 
-const CustomButton = ({ card = false, text, color, border, longButton }) => {
+const CustomButton = ({ card = false, text, color, border, longButton, path, noArrow, noCircle, type= false }) => {
   return card ? (
-    <button className="grid__block--btn">
+    <Link to={path} className="grid__block--btn">
       Read More
       <i className="far fa-long-arrow-right"></i>
-    </button>
+    </Link>
   ) : (
-    <button className={`btn-theme ${color || ""}${border ? "btn-border" : ""} ${longButton ? "btn-long" : ""}`}>
+    <button type={type || undefined} className={`btn-theme ${color || ""}${border ? "btn-border" : ""} ${longButton ? "btn-long" : ""} ${noCircle ? "btn-remove-radius" : ""}`}>
       <span className="btn-wrap">
         <span className="text-one">{text}</span>
         <span className="text-two">{text}</span>
       </span>
-      <i className="far fa-long-arrow-right"></i>
+      {noArrow ? "" : <i className="far fa-long-arrow-right"></i>}
     </button>
   )
 }

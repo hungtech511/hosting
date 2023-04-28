@@ -2,6 +2,7 @@ import Header from "@layouts/Header/Header"
 import { Box } from "@mui/material"
 import { Suspense, lazy } from "react"
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
+import PreLoading from "@components/PreLoading"
 
 const Home = lazy(() => import("@pages/Home/Home"))
 const AboutUs = lazy(() => import("@pages/AboutUs"))
@@ -10,12 +11,7 @@ const Hosting = lazy(() => import("@pages/Hosting"))
 
 const AuthLayout = () => {
   return (
-    <Box>
-      <Header />
-      <Box>
-        <Outlet />
-      </Box>
-    </Box>
+    <Outlet />
   )
 }
 
@@ -26,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: (
-          <Suspense fallback="loading....">
+          <Suspense fallback={<PreLoading/>}>
             <Home />
           </Suspense>
         ),
@@ -34,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: (
-          <Suspense fallback="loading....">
+          <Suspense fallback={<PreLoading/>}>
             <AboutUs />
           </Suspense>
         ),

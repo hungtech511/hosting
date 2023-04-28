@@ -14,6 +14,7 @@ li {
 
 a {
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 img {
@@ -24,12 +25,12 @@ img {
   box-shadow: none;
 }
 
-p{
-  margin:0;
+p {
+  margin: 0;
 }
-.image-column-home{
+.image-column-home {
   position: relative;
-  .icon-layer{
+  .icon-layer {
     position: absolute;
     left: 0px;
     top: 70px;
@@ -40,9 +41,9 @@ p{
   }
 }
 
-.image-column{
+.image-column {
   position: relative;
-  .icon-layer-shape{
+  .icon-layer-shape {
     position: absolute;
     left: 0px;
     top: 70px;
@@ -52,9 +53,12 @@ p{
     background-repeat: no-repeat;
   }
 }
-.image-center{
+.image-center {
   display: block;
-  margin:0 auto;
+  margin: 0 auto;
+}
+.MuiGrid-item{
+  width: 100%;
 }
 
 @media (min-width: 420px) {
@@ -63,8 +67,31 @@ p{
     padding-right: 15px !important;
   }
 }
-@media (max-width: 500px) {
-  .icon-layer-shape{
+
+@media (min-width: 576px) {
+  .MuiContainer-root {
+    max-width: 768px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .MuiContainer-root {
+    max-width: 992px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .MuiContainer-root {
+    max-width: 1200px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .MuiContainer-root {
+    max-width: 1320px !important;
+  }
+}
+@media (max-width: 1199px) {
+  .icon-layer-shape {
     display: none;
   }
 }
