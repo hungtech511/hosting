@@ -41,7 +41,7 @@ const ControlPanel = () => {
                         <CustomButton color='orange' text='Get Started' />
                     </Grid>
                     <Grid className="image-column" item lg={7}>
-                        <ItemBackground className="icon-layer-shape" imageSrc="https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/pattern-16.png" />
+                        <ItemBackground className="icon-layer-shape" imageSrc="public/image/pattern-16.png" />
                         <Box className="image-wrapper">
                             <img className="image-center" src="https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/security-3.png" alt="image" />
                         </Box>

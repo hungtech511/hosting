@@ -12,6 +12,9 @@
   padding: 10px 35px 10px;
   border: none;
   cursor: pointer;
+  &.btn-remove-radius{
+    border-radius: 0%;
+  }
   &::before {
     transition-duration: 800ms;
     position: absolute;

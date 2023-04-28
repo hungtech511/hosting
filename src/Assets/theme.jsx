@@ -12,6 +12,7 @@ export const ColorTheme = () => ({
   text : "#666",
   blueSubtitle: "rgb(54,130,254)",
   lightBlue: "#EAF7FF",
+  blogHeading: "rgb(8,2,48)"
 })
 export const FontSizeTheme = () => ({
   fontSize: {
@@ -19,6 +20,7 @@ export const FontSizeTheme = () => ({
     16: "16px",
     18: "18px",
     20: "20px",
+    22: "22px",
     24: "24px",
     28: "28px",
     30: "30px",
@@ -46,9 +48,10 @@ export const FontWeightTheme = () => ({
 export const themeSettings = {
   breakpoints: {
     values: {
-      xs: 0,
-      sm: 1130,
-      md: 1200,
+      xxs: 499,
+      xs: 576,
+      sm: 768,
+      md: 992,
       lg: 1320,
     },
   },

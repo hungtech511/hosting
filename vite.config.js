@@ -4,8 +4,10 @@ import { defineConfig } from "vite"
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  publicDir: 'image',
   resolve: {
     alias: [
+      { find: "@asset", replacement: "/public/image/" },
       { find: "@assets", replacement: "/src/Assets" },
       { find: "@components", replacement: "/src/Components" },
       { find: "@pages", replacement: "/src/Pages" },

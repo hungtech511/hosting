@@ -7,21 +7,27 @@ import "./Accordion.scss"
 
 const AccordionIner = () => {
   return (
-    <Container>
-      <Box component="div" className="fag-section">
-        <HeadingTitle highlight="Service" subTitle="FAQ" center>
-          Frequently Asked Questions about hosting
-        </HeadingTitle>
-        <Grid container columnSpacing={2}>
-          <Grid xs={12} md={6}>
-            <CustomizedAccordions accordionLists={accordionLists} />
+    <Box className="accordion-inner">
+      <Container>
+        <Box component="div" className="fag-section">
+          <HeadingTitle colorHeading="white" highlight="Service" subTitle="FAQ" center>
+            Frequently Asked Questions <br /> about hosting
+          </HeadingTitle>
+          <Grid container columnSpacing={2} rowSpacing={
+            {
+              sm:5
+            }
+          }>
+            <Grid item xs={12} md={6}>
+              <CustomizedAccordions accordionLists={accordionLists} />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <CustomizedAccordions accordionLists={accordionLists} />
+            </Grid>
           </Grid>
-          <Grid xs={12} md={6}>
-            <CustomizedAccordions accordionLists={accordionLists} />
-          </Grid>
-        </Grid>
-      </Box>
-    </Container>
+        </Box>
+      </Container>
+    </Box>
   )
 }
 

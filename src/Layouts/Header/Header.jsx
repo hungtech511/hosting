@@ -9,6 +9,8 @@ import CanvasRight from "@components/CanvasMenu/CanvasRight";
 
 import { listMenu } from "@utils/constant"
 
+import { useLocation } from 'react-router-dom';
+
 import "./Header.scss";
 
 const Header = () => {
@@ -17,6 +19,15 @@ const Header = () => {
 
   const [fixed, setFixed] = useState(false)
   const [canvasOpen, setCanvasOpen] = useState(false)
+  const [width, setWidth] = useState(window.innerWidth);
+  const isMobile = width < 992;
+  const location = useLocation();
+  const isHomePage = location.pathname === "/" ? true : false;
+
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
 
   const isFixed = () => {
     /* Method that will fix header after a specific scrollable */
@@ -32,12 +43,18 @@ const Header = () => {
     }
   }, [])
 
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowSizeChange);
+    }
+  }, [window.innerWidth]);
 
 
 
   return (
     <>
-      <header className="main-header">
+      <header className={isHomePage ? "main-header" : "main-header style-2"}>
         <Box className="header-top">
           <Container className="auto-container" maxWidth="lg">
             <Box className="inner-container">
@@ -78,7 +95,7 @@ const Header = () => {
               alignItems: 'center'
             }}>
               <Link to="/">
-                <img src={fixed ? logoFixedNav : logoWhite} alt="logo" />
+                <img src={fixed ? ((isMobile ? logoWhite : logoFixedNav)) : (isHomePage ? logoWhite : logoFixedNav)} alt="logo" />
               </Link>
               <ul className="nav-list">
                 {
@@ -130,7 +147,7 @@ const Header = () => {
         <Box className="close__offcanvas" onClick={() => setCanvasOpen(false)}></Box>
         <Box className="offcanvas__inner">
           <CanvasLeft />
-          <CanvasRight/>
+          <CanvasRight />
         </Box>
       </Box>
     </>

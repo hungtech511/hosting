@@ -6,7 +6,7 @@ import "./Grid.scss"
 
 const CustomListItem = () => {
   return (
-    <Grid container spacing={4}>
+    <Grid container spacing={2}>
       {listCard?.map((data) => (
         <CardItem key={data.id} {...data} />
       ))}

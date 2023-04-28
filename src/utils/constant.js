@@ -8,18 +8,6 @@ export const listMenu = [
     id: 2,
     title: "About Us",
     path: "/about-us",
-    subMenu: [
-      {
-        id: 1,
-        title: "About us 2",
-        path: "/"
-      },
-      {
-        id: 2,
-        title: "About us 3",
-        path: "/"
-      }
-    ]
   },
   {
     id: 3,
@@ -99,37 +87,37 @@ export const listBackgroundHomeImage = [
     id: 1,
     className: "icon-layer-one",
     imageSrc:
-      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-1.png",
+      "public/image/Home/shape-1.png",
   },
   {
     id: 2,
     className: "icon-layer-two",
     imageSrc:
-      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/shape-2.png",
+      "public/image/Home/shape-2.png",
   },
   {
     id: 3,
     className: "icon-layer-three",
     imageSrc:
-      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-7-1.png",
+      "public/image/Home/icon-7-1.png",
   },
   {
     id: 4,
     className: "icon-layer-four",
     imageSrc:
-      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-8-1.png",
+      "public/image/Home/icon-8-1.png",
   },
   {
     id: 5,
     className: "icon-layer-fifth",
     imageSrc:
-      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/icon-9.png",
+      "public/image/Home/icon-9.png",
   },
   {
     id: 6,
     className: "shape-layer",
     imageSrc:
-      "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/pattern-layer.png",
+      "public/image/Home/pattern-layer.png",
   },
 ]
 
@@ -269,4 +257,109 @@ export const accordionLists = [
       "On the other hand we denounce with righteous indignat and dislike men who are so beguiled and demoralized by the charms of the moment so by desire.",
     expandeds: "panel4",
   },
+]
+
+
+export const BlogListHome = [
+  {
+    id: 1,
+    date: "27 Apr, 2023",
+    category: "Cloud Hosting",
+    title: "How to download & restore a full",
+    author: "Ritarx Dimay",
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/blog1-417x277.jpg"
+  },
+  {
+    id: 2,
+    date: "27 Apr, 2023",
+    category: "Cloud Hosting",
+    title: "7 Different Types of Web Hosting You",
+    author: "Ritarx Dimay",
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/blog3-417x277.jpg"
+  },
+  {
+    id: 3,
+    date: "27 Apr, 2023",
+    category: "Cloud Hosting",
+    title: "Finally found a work computer setup That’s",
+    author: "Ritarx Dimay",
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/blog-1-417x277.jpg"
+  },
+]
+
+export const HomePartnerList = [
+  {
+    id: 1,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/23.png",
+    path: "google.com"
+  },
+  {
+    id: 2,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/24.png",
+    path: "google.com"
+  },
+  {
+    id: 3,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/25.png",
+    path: "google.com"
+  },
+  {
+    id: 4,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/26.png",
+    path: "google.com"
+  },
+  {
+    id: 5,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/27.png",
+    path: "google.com"
+  },
+  {
+    id: 6,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/23.png",
+    path: "google.com"
+  },
+  {
+    id: 7,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/24.png",
+    path: "google.com"
+  },
+  {
+    id: 8,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/25.png",
+    path: "google.com"
+  },
+  {
+    id: 9,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/26.png",
+    path: "google.com"
+  },
+  {
+    id: 10,
+    imageSrc: "https://themexriver.com/wp/hostix/wp-content/uploads/2022/12/27.png",
+    path: "google.com"
+  },
+]
+
+
+export const ListIcon = [
+  {
+      id: 1,
+      className:"fab fa-facebook-f",
+      path: "facebook.com"
+  },
+  {
+      id: 2,
+      className:"fab fa-twitter",
+      path: "facebook.com"
+  },
+  {
+      id: 3,
+      className:"fab fa-instagram",
+      path: "facebook.com"
+  },
+  {
+      id: 4,
+      className:"fab fa-youtube",
+      path: "facebook.com"
+  }
 ]

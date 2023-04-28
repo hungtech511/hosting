@@ -27,12 +27,12 @@ const PricingPlan = ({ background }) => {
                 Hostix Gives You Best Price <br />
                 Choose Your Plan
             </HeadingTitle>
-            <Container fixed={true} maxWidth="lg">
-                <Grid container spacing={{lg: 4, xs:3}}>
+            <Container>
+                <Grid container spacing={{lg:4, md:3, sm: 3}}>
                     {
                         pricingPlanList?.map((item, index) => {
                             return (
-                                <Grid className="plan-box" key={index} item lg={4} md={6} sm={6} xs={12} >
+                                <Grid className="plan-box" key={index} item xs={12} sm={6} md={6} lg={4} >
                                     <Box className="inner-box">
                                         <Box className="icon-box">
                                             <span className="icon">

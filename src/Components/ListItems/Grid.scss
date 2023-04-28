@@ -37,8 +37,6 @@
   &--btn {
     background: none;
     border: none;
-    margin-top: 20px;
-
     &:hover {
       color: var(--secondary-color);
       i {
@@ -55,7 +53,7 @@
       line-height: 34px;
       text-align: center;
       display: inline-block;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease;
       margin-left: 10px;
       transform: rotate(-45deg);
       &::before {

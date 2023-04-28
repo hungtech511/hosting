@@ -15,7 +15,7 @@ const renderBackground = () => {
 			{
 				listBackgroundHomeImage.map((item, index) => {
 					return (
-						<ItemBackground key={item?.id} className={`icon-layer ${item?.className}`} imageSrc={item?.imageSrc} />
+						<ItemBackground key={item?.id} className={`icon-layer ${item?.className}`} imageSrc={`${item.imageSrc}`} />
 					)
 				})
 			}

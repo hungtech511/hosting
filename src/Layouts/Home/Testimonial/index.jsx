@@ -2,9 +2,6 @@ import { ColorTheme, FontSizeTheme, FontWeightTheme } from "@assets/theme";
 import { Box, Container, Typography } from "@mui/material";
 import HeadingTitle from "@components/HeadingTitle";
 import CustomSlider from "@components/Slider";
-import ItemBackground from "@components/ItemBackground";
-
-
 
 import shape from '@assets/image/shape.jpg';
 import quote from '@assets/image/quote-icon.png';
@@ -44,9 +41,8 @@ const Testimonial = ({ background }) => {
         ]
     };
 
-    let test = [1, 2, 3, 4, 5]
 
-    let TestComponent = test?.map((item, index) => {
+    let TestimonialComponent = new Array(5).fill(0).map((item, index) => {
         return (
             <Box className="testimonial-item" key={index}>
                 <Box className="inner-box">
@@ -82,7 +78,7 @@ const Testimonial = ({ background }) => {
                 about hostix
             </HeadingTitle>
             <Container>
-                <CustomSlider className="testimonial-home" data={TestComponent} settingSlider={settings} />
+                <CustomSlider className="testimonial-home" data={TestimonialComponent} settingSlider={settings} />
             </Container>
         </Box>
     )

@@ -3,31 +3,9 @@ import { Link } from "react-router-dom";
 
 import logo from "@assets/image/logo-4.svg";
 import './CanvasRight.scss';
+import { ListIcon } from "@utils/constant";
 
 const CanvasRight = () => {
-
-    const ListIcon = [
-        {
-            id: 1,
-            className:"fab fa-facebook-f",
-            path: "facebook.com"
-        },
-        {
-            id: 2,
-            className:"fab fa-twitter",
-            path: "facebook.com"
-        },
-        {
-            id: 3,
-            className:"fab fa-instagram",
-            path: "facebook.com"
-        },
-        {
-            id: 4,
-            className:"fab fa-youtube",
-            path: "facebook.com"
-        }
-    ]
 
     return (
         <Box className="offcanvas__right">
