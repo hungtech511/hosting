@@ -16,7 +16,7 @@ const Highlight = ({ parts, child, patt }) => {
   )
 }
 
-const Highlighted = ({ search = "", children = "", colorHeading }) => {
+const Highlighted = ({ search = "", children = "", colorHeading}) => {
   const patt = new RegExp(`(${escapeRegExp(search)})`, "i")
   const parts = (child) => String(child).split(patt)
 

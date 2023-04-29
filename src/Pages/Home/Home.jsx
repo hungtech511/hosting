@@ -7,7 +7,7 @@ import LatestFeatures from "@layouts/Home/LatestFeatures"
 import ControlPanel from "@layouts/Home/ControlPanel"
 import PricingPlan from "@layouts/Home/PricingPlan"
 import Testimonial from "@layouts/Home/Testimonial"
-import AccordionIner from "@components/Accordion/AccordionIner"
+import HomeAccordion from "@layouts/Home/Accordion"
 import BlogList from "@layouts/Home/BlogList"
 import HomePartner from "@layouts/Home/HomePartner"
 import Footer from "@layouts/Footer"
@@ -26,7 +26,7 @@ const Home = () => {
       <LatestFeatures background="backgroundHome" />
       <ControlPanel />
       <Testimonial background="lightBlue"/>
-      <AccordionIner />
+      <HomeAccordion/>
       <BlogList/>
       <HomePartner/>
       <Footer background="backgroundHome"/>

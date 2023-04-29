@@ -1,0 +1,50 @@
+.container-special {
+  .inner-column {
+    position: relative;
+    padding-left: 40px;
+    .text {
+      font-size: 20px;
+      margin-top: 25px;
+      color: #666;
+      line-height: 34px;
+      margin-bottom: 45px;
+    }
+    .features-list {
+      li {
+        position: relative;
+        font-size: 18px;
+        padding-left: 30px;
+        margin-bottom: 25px;
+        &::before {
+          content: "\f00c";
+          font-family: "Font Awesome 5 Pro";
+          font-weight: 300;
+          position: absolute;
+          left: 0;
+          color: var(--blue-color);
+        }
+        span {
+          color: var(--blue-color);
+        }
+      }
+      margin-bottom: 55px;
+    }
+    .price {
+      position: relative;
+      font-weight: 600;
+      padding: 20px 22px;
+      display: inline-block;
+      color:#000;
+      font-size: 16px;
+      text-transform: uppercase;
+      border:2px solid #000;
+      span{
+        color: var(--blue-color);
+      }
+      &:hover{
+        color:var(--white-color);
+        background:#000;
+      }
+    }
+  }
+}

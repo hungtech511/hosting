@@ -363,3 +363,42 @@ export const ListIcon = [
       path: "facebook.com"
   }
 ]
+
+export const ListAnimationIcon = [
+  {
+    id: 1,
+    className: "pattern-layer",
+    imageSrc:
+      "public/image/pattern-14.png",
+  },
+  {
+    id: 2,
+    className: "icon-one",
+    imageSrc:
+      "public/image/AnimationImage/gear-1.png",
+  },
+  {
+    id: 3,
+    className: "icon-two",
+    imageSrc:
+      "public/image/AnimationImage/gear-2.png",
+  },
+  {
+    id: 4,
+    className: "icon-three",
+    imageSrc:
+      "public/image/AnimationImage/gear-3.png",
+  },
+  {
+    id: 5,
+    className: "icon-four",
+    imageSrc:
+      "public/image/AnimationImage/gear-4.png",
+  },
+  {
+    id: 6,
+    className: "icon-five",
+    imageSrc:
+      "public/image/AnimationImage/chat-icon.png",
+  }
+]
