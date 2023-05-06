@@ -1,12 +1,25 @@
 import React from "react"
 import CustomizedAccordions from ".."
 import { Box, Container, Grid } from "@mui/material"
-import { accordionLists } from "@utils/constant"
+import ItemBackground from "@components/ItemBackground"
+import { accordionLists,accordionBackgroundImageList } from "@utils/constant"
 import "./Accordion.scss"
 
 const AccordionIner = ({ heading, noHeadingInside = false }) => {
   return (
     <Box className="accordion-inner">
+      {
+        noHeadingInside && 
+        <>
+          {
+            accordionBackgroundImageList.map((item,index) =>{
+              return (
+                <ItemBackground key={item.id} className={item.className} imageSrc={item.imageSrc}/>
+              )
+            })
+          }
+        </>
+      }
       <Container>
         <Box component="div" className={noHeadingInside ? "" : "fag-section"}>
           {heading}

@@ -1,0 +1,115 @@
+.why-choose-us {
+  padding-top: 60px;
+  padding-bottom:80px;
+  @media only screen and (max-width: 1199px){
+    padding-bottom: 20px;
+  }
+  &-wrapper {
+    margin-top:15px;
+    margin-bottom: 30px;
+    @media only screen and (max-width: 1199px){
+      margin-top: 30px;
+    }
+    .feature-box {
+      position: relative;
+      margin-bottom: 70px;
+      @media only screen and (max-width: 1199px){
+        text-align: center;
+        .text{
+          margin:10px auto 0;
+        }
+      }
+      .inner-box {
+        position: relative;
+        padding-left: 115px;
+        .icon {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 80px;
+          height: 80px;
+          overflow: hidden;
+          border-radius: 50%;
+          transition: all 0.5s ease;
+          box-shadow: 0px 4px 18px rgb(0 0 0 / 5%);
+          text-align: center;
+          line-height: 78px;
+          @media only screen and (max-width: 1199px){
+            position: relative;
+            margin: 0 auto;
+          }
+          img {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+        h5{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .text{
+            line-height: 26.8px;
+            max-width: 230px;
+            opacity: 0.70;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        @media only screen and (max-width: 1199px){
+          padding-left: 0;
+        }
+      }
+      &:hover {
+        .icon {
+          animation: icon-bounce 0.8s ease-out;
+          -webkit-animation: icon-bounce 0.8s ease-out;
+        }
+      }
+    }
+    .image-column {
+      .image-box {
+        position: relative;
+        .pattern-layer {
+          position: absolute;
+          left: -20px;
+          bottom: -40px;
+          width: 289px;
+          height: 237px;
+          z-index: -1;
+          background-repeat: no-repeat;
+        }
+        .color-one {
+          position: absolute;
+          right: -5px;
+          top: -25px;
+          width: 150px;
+          height: 150px;
+          z-index: -1;
+          border-radius: 50%;
+          background: rgb(53, 141, 221);
+          animation-name: zoom-fade;
+          animation-duration: 6s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+        .color-two {
+          position: absolute;
+          right: -15px;
+          bottom: -25px;
+          width: 160px;
+          height: 160px;
+          z-index: -1;
+          border-radius: 15px;
+          background: #ffd000;
+          animation-name: rotateme2;
+          animation-duration: 15s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+        }
+      }
+      @media only screen and (max-width: 1199px){
+        display: none;
+      }
+    }
+  }
+}

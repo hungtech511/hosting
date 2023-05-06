@@ -8,7 +8,7 @@ const CustomButton = ({ card = false, text, color, border, longButton, path, noA
       <i className="far fa-long-arrow-right"></i>
     </Link>
   ) : (
-    <button type={type || undefined} className={`btn-theme ${color || ""}${border ? "btn-border" : ""} ${longButton ? "btn-long" : ""} ${noCircle ? "btn-remove-radius" : ""}`}>
+    <button type={type || undefined} className={`btn-theme ${color || ""}${border ? "btn-border" : ""} ${longButton ? "btn-long" : ""}${noCircle ? "btn-remove-radius" : ""}`}>
       <span className="btn-wrap">
         <span className="text-one">{text}</span>
         <span className="text-two">{text}</span>
