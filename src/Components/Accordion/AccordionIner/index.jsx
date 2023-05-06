@@ -1,30 +1,38 @@
 import React from "react"
-import HeadingTitle from "@components/HeadingTitle"
 import CustomizedAccordions from ".."
 import { Box, Container, Grid } from "@mui/material"
-import { accordionLists } from "@utils/constant"
+import ItemBackground from "@components/ItemBackground"
+import { accordionLists,accordionBackgroundImageList } from "@utils/constant"
 import "./Accordion.scss"
 
-const AccordionIner = () => {
+const AccordionIner = ({ heading, noHeadingInside = false }) => {
   return (
     <Box className="accordion-inner">
+      {
+        noHeadingInside && 
+        <>
+          {
+            accordionBackgroundImageList.map((item,index) =>{
+              return (
+                <ItemBackground key={item.id} className={item.className} imageSrc={item.imageSrc}/>
+              )
+            })
+          }
+        </>
+      }
       <Container>
-        <Box component="div" className="fag-section">
-          <HeadingTitle colorHeading="white" highlight="Service" subTitle="FAQ" center>
-            Frequently Asked Questions <br /> about hosting
-          </HeadingTitle>
-          <Grid container columnSpacing={2} rowSpacing={
-            {
-              sm:5
-            }
-          }>
-            <Grid item xs={12} md={6}>
-              <CustomizedAccordions accordionLists={accordionLists} />
+        <Box component="div" className={noHeadingInside ? "" : "fag-section"}>
+          {heading}
+          <Box className={noHeadingInside && "section"}>
+            <Grid container columnSpacing={noHeadingInside ? 10 : 2} rowSpacing={5}>
+              <Grid item xs={12} md={6}>
+                <CustomizedAccordions accordionLists={accordionLists} />
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <CustomizedAccordions accordionLists={accordionLists} />
+              </Grid>
             </Grid>
-            <Grid item xs={12} md={6}>
-              <CustomizedAccordions accordionLists={accordionLists} />
-            </Grid>
-          </Grid>
+          </Box>
         </Box>
       </Container>
     </Box>

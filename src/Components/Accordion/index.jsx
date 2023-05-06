@@ -25,9 +25,9 @@ const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
     expandIcon={
       props?.expanded === props?.expandeds ? (
-        <RemoveIcon  sx={{ fontSize: "0.9rem", color: "white" }} />
+        <RemoveIcon  sx={{ fontSize: "0.9rem" }} />
       ) : (
-        <AddIcon  sx={{ fontSize: "0.9rem", color: "white" }} />
+        <AddIcon  sx={{ fontSize: "0.9rem" }} />
       )
     }
     {...props}
@@ -57,16 +57,19 @@ const CustomizedAccordions = ({ accordionLists }) => {
         key={accordion?.id}
         expanded={expanded === accordion?.expandeds}
         onChange={handleChange(accordion?.expandeds)}
+        className="accordion-item"
         >
         <AccordionSummary
           aria-controls={`panel${accordion?.id}d-content`}
           id={`panel${accordion?.id}d-header`}
           expanded={expanded}
-          expandeds={accordion?.expandeds}>
-          <Typography fontWeight={fontWeight[600]} fontSize={fontSize[20]} color={colors["white"]}>{accordion?.title}</Typography>
+          expandeds={accordion?.expandeds}
+          className="accordion-heading"
+          >
+          <Typography className="accordion-title" fontWeight={fontWeight[600]} fontSize={fontSize[20]}>{accordion?.title}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography fontSize={fontSize[18]} color={colors["white"]}>{accordion?.description}</Typography>
+          <Typography className="accordion-content" fontSize={fontSize[18]}>{accordion?.description}</Typography>
         </AccordionDetails>
       </Accordion>
   ))

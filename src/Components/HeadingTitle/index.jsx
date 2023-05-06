@@ -10,23 +10,46 @@ const HeadingTitle = ({
   highlight = "",
   center,
   colorSubTitle = "",
-  colorHeading = ""
+  colorHeading = "",
+  subTitleTop = false,
 }) => {
   const { fontSize } = FontSizeTheme()
   const colors = ColorTheme()
 
   return (
-    <Box className="heading-title" sx={{ textAlign: center ? "center" : "left" }}>
-      <Highlighted colorHeading={colorHeading} search={highlight}>{children}</Highlighted>
-      <Typography
-        fontSize={fontSize[16]}
-        textTransform="uppercase"
-        fontWeight="500"
-        mt={2}
-        color={colors[colorSubTitle]}
-        className={center ? "text__center--subtitle" : ""}>
-        {subTitle}
-      </Typography>
+    <Box className={subTitleTop ? "heading-title style-2" : "heading-title"} sx={{ textAlign: center ? "center" : "left" }}>
+      {
+        subTitleTop ?
+          <>
+            {
+              subTitle && <Typography
+              fontSize={fontSize[16]}
+              textTransform="uppercase"
+              fontWeight="500"
+              mt={2}
+              color={colors[colorSubTitle]}
+              className={center ? "text__center--subtitle sub-title" : "sub-title"}>
+              {subTitle}
+            </Typography>
+            }
+            <Highlighted colorHeading={colorHeading} search={highlight}>{children}</Highlighted>
+          </>
+          :
+          <>
+            <Highlighted colorHeading={colorHeading} search={highlight}>{children}</Highlighted>
+            {
+              subTitle && <Typography
+              fontSize={fontSize[16]}
+              textTransform="uppercase"
+              fontWeight="500"
+              mt={2}
+              color={colors[colorSubTitle]}
+              className={center ? "text__center--subtitle" : ""}>
+              {subTitle}
+            </Typography>
+            }
+          </>
+      }
     </Box>
   )
 }

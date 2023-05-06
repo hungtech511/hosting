@@ -1,0 +1,77 @@
+.testimonial-section {
+  padding: 110px 0px 105px;
+  position: relative;
+  .bg-color-layer {
+    position: absolute;
+    left: 0px;
+    top: -250px;
+    right: 0px;
+    bottom: 0px;
+    background: linear-gradient(0deg, #e8f4ff 0%, #fff 100%);
+  }
+  .heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 65px;
+  }
+  .slick-list {
+    position: relative;
+    overflow: visible;  
+    .slick-slide{
+        padding-left:30px;
+    }
+    @media only screen and (max-width: 1365px){
+        overflow: hidden;  
+        .slick-slide{
+            padding-left: 0;
+        }
+    }
+  }
+  .text {
+    position: relative;
+    padding: 50px 40px;
+    background: var(--white-color);
+    box-shadow: 0px 4px 41px rgb(0 0 0 / 5%);
+    &::before{
+        position: absolute;
+        content: '';
+        left: 75px;
+        bottom: -20px;
+        border-top: 20px solid var(--white-color);
+        border-right: 20px solid transparent;
+    }
+  }
+  .user-box{
+    position: relative;
+    margin-top: 45px;
+    margin-left: 40px;
+    .user-inner{
+        position: relative;
+        min-height: 57px;
+        font-size: 16px;
+        padding-top: 5px;
+        padding-left: 80px;
+        .image{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 57px;
+            height: 57px;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        strong{
+            position: relative;
+            display: block;
+            font-weight: 500;
+            font-size: 20px;
+            color:#000;
+            margin-bottom: 5px;
+        }
+    }
+  }
+}

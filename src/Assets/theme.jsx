@@ -12,6 +12,7 @@ export const ColorTheme = () => ({
   text : "#666",
   blueSubtitle: "rgb(54,130,254)",
   lightBlue: "#EAF7FF",
+  footerStyle2: "#f4faff",
   blogHeading: "rgb(8,2,48)"
 })
 export const FontSizeTheme = () => ({

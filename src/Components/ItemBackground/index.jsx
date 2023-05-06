@@ -2,10 +2,9 @@ import { ColorTheme } from "@assets/theme";
 import { Box } from "@mui/material";
 
 const ItemBackground = ({ imageSrc, className, children }) => {
-    const colors = ColorTheme();
     return (
         <Box
-            className={className}
+            className={className || ""}
             sx={{
                 backgroundImage: `url(${imageSrc})`,
             }}

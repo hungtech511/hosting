@@ -71,6 +71,17 @@
       }
     }
   }
+  &.black{
+    background-color: #0f0f2d;
+    &::before{
+      background-color: #ff0075;
+    }
+    &:hover{
+      &::before{
+        background-color: #ff0075;
+      }
+    }
+  }
   .btn-wrap {
     position: relative;
     z-index: 1;

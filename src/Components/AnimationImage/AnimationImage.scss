@@ -1,0 +1,80 @@
+.inner-column {
+  position: relative;
+  .pattern-layer {
+    position: absolute;
+    right: 40px;
+    top: -50px;
+    width: 592px;
+    height: 635px;
+  }
+  .animation1 {
+    animation-name: rotateme;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .animation2 {
+    animation-name: rotateme2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .animation3{
+    animation-name: float_up_down; 
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .icon {
+    &-one {
+      position: absolute;
+      left: 14%;
+      top: 50%;
+      width: 57px;
+      height: 57px;
+      background-repeat: no-repeat;
+      @extend .animation2;
+    }
+    &-two {
+      position: absolute;
+      left: 4%;
+      top: 10%;
+      width: 81px;
+      height: 82px;
+      background-repeat: no-repeat;
+      @extend .animation1;
+    }
+    &-three {
+      position: absolute;
+      right: 12%;
+      top: 21%;
+      width: 57px;
+      height: 57px;
+      background-repeat: no-repeat;
+      @extend .animation2;
+    }
+    &-four {
+      position: absolute;
+      right: 1%;
+      bottom: 32%;
+      width: 57px;
+      height: 57px;
+      background-repeat: no-repeat;
+      @extend .animation1;
+    }
+    &-five {
+      position: absolute;
+      left: 44%;
+      top: 19%;
+      z-index: 1;
+      width: 142px;
+      height: 177px;
+      background-repeat: no-repeat;
+      @extend .animation3;
+    }
+  }
+  .image {
+    position: relative;
+    margin-left: -50px;
+  }
+}

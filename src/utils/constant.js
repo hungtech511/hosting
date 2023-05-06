@@ -259,6 +259,29 @@ export const accordionLists = [
   },
 ]
 
+export const accordionBackgroundImageList = [
+  {
+    id: 1,
+    className:"icon-layer-one",
+    imageSrc:"public/image/icon-4.png"
+  },
+  {
+    id: 2,
+    className:"icon-layer-two",
+    imageSrc:"public/image/icon-5.png"
+  },
+  {
+    id: 3,
+    className:"icon-layer-three",
+    imageSrc:"public/image/icon-6.png"
+  },
+  {
+    id: 4,
+    className:"icon-layer-four",
+    imageSrc:"public/image/vector-2.png"
+  },
+]
+
 
 export const BlogListHome = [
   {
@@ -361,5 +384,106 @@ export const ListIcon = [
       id: 4,
       className:"fab fa-youtube",
       path: "facebook.com"
+  }
+]
+
+export const ListAnimationIcon = [
+  {
+    id: 1,
+    className: "pattern-layer",
+    imageSrc:
+      "public/image/pattern-14.png",
+  },
+  {
+    id: 2,
+    className: "icon-one",
+    imageSrc:
+      "public/image/AnimationImage/gear-1.png",
+  },
+  {
+    id: 3,
+    className: "icon-two",
+    imageSrc:
+      "public/image/AnimationImage/gear-2.png",
+  },
+  {
+    id: 4,
+    className: "icon-three",
+    imageSrc:
+      "public/image/AnimationImage/gear-3.png",
+  },
+  {
+    id: 5,
+    className: "icon-four",
+    imageSrc:
+      "public/image/AnimationImage/gear-4.png",
+  },
+  {
+    id: 6,
+    className: "icon-five",
+    imageSrc:
+      "public/image/AnimationImage/chat-icon.png",
+  }
+]
+
+export const WhyChooseUsList = [
+  {
+    id:1,
+    className: "left-column",
+    list: [
+      {
+        id: 1,
+        title: "SECURITY MANAGMENT",
+        text: "Lorem ipsum, or lipsum as some known, is dummy text used",
+        imageSrc: "public/image/WhyChooseUs/1c1.svg"
+      },
+      {
+        id: 2,
+        title: "1 CLICK INSTALL APPS",
+        text: "Lorem ipsum, or lipsum as some known, is dummy text used",
+        imageSrc: "public/image/WhyChooseUs/12.svg"
+      },
+      {
+        id: 3,
+        title: "FREE SITE OPTIMIZATION",
+        text: "Lorem ipsum, or lipsum as some known, is dummy text used",
+        imageSrc: "public/image/WhyChooseUs/ic3.svg"
+      }
+    ]
+  },
+  {
+    id:2,
+    className: "image-column",
+    imageList: [
+      {
+        id: 1,
+        layerImage: "public/image/WhyChooseUs/pattern-2.png",
+        imageSrc: "public/image/WhyChooseUs/image.png"
+      }
+    ]
+  },
+  {
+    id:3,
+    className: "right-column",
+    list: [
+      {
+        id: 1,
+        title: "CUSTOMER STRATEGY",
+        text: "Lorem ipsum, or lipsum as some known, is dummy text used",
+        imageSrc: "public/image/WhyChooseUs/1c.svg"
+      },
+      {
+        id: 2,
+        title: "UPTIME & BACKUP",
+        text: "Lorem ipsum, or lipsum as some known, is dummy text used",
+        imageSrc: "public/image/WhyChooseUs/1c4.svg"
+      },
+      {
+        id: 3,
+        title: "DDOS PROTECED HOSTING",
+        text: "Lorem ipsum, or lipsum as some known, is dummy text used",
+        imageSrc: "public/image/WhyChooseUs/cloud.svg"
+      }
+    ]
   }
 ]

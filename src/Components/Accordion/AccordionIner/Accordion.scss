@@ -1,15 +1,71 @@
-.accordion-inner{
-  padding-top:150px;
+.accordion-inner {
+  padding-top: 150px;
+  position: relative;
   .fag-section {
     padding: 90px 70px 90px;
     background-image: url("https://themexriver.com/wp/hostix/wp-content/uploads/2022/11/pattern-17.png");
     background-color: #1d079f;
     border-radius: 40px;
-    @media only screen and (max-width: 1023px){
+    .accordion-title,
+    .MuiAccordionSummary-expandIconWrapper,
+    .accordion-content {
+      color: #fff;
+    }
+    @media only screen and (max-width: 1023px) {
       padding: 70px 40px 60px;
     }
-    @media only screen and (max-width: 599px){
+    @media only screen and (max-width: 599px) {
       padding: 30px 20px 30px;
+    }
+  }
+  .section {
+    position: relative;
+    border-radius: 15px;
+    padding: 50px 50px 100px;
+    background-color: #eaf5ff;
+    margin-top: 50px;
+    & .MuiGrid-item > .accordion-item {
+      &.Mui-expanded {
+        background-color: var(--white-color);
+        position: relative;
+        padding: 15px 20px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        padding-top: 30px;
+        padding-left:0;
+        .accordion-heading {
+          padding-bottom: 15px;
+        }
+        .MuiAccordionDetails-root {
+          padding: 0px 20px 30px 40px;
+          .accordion-content {
+            line-height: 28.8px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .accordion-heading {
+      position: relative;
+      padding-left: 50px;
+      .MuiAccordionSummary-expandIconWrapper {
+        position: absolute;
+        left: 0;
+        width: 28px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 14px;
+        color:#000;
+        background:#ffd000;
+        svg{
+          position: absolute;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+        }
+      }
     }
   }
 }
